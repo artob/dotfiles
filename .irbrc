@@ -1,6 +1,4 @@
-require 'rubygems'
-require 'pp'
+require 'rubygems' rescue nil
 require 'wirble'
 
-Wirble.init
-Wirble.colorize
+Wirble.init(:init_colors => true)
