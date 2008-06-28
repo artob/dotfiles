@@ -1,7 +1,12 @@
 [user]
 	email = arto@bendiken.net
 	name = Arto Bendiken
+
 [svn]
 	authorsfile = /home/arto/.svnauthors
+
 [alias]
-	stat=diff --name-status -r
+	co = checkout
+	ci = commit
+	st = status
+	stat = diff --name-status -r
