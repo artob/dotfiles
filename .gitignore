@@ -1,1 +1,6 @@
-*
+/*
+.*
+!.gitconfig
+!.irbrc
+.irb_history
+.gnupg
