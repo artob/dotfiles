@@ -1,6 +1,7 @@
 [user]
 	email = arto@bendiken.net
 	name = Arto Bendiken
+	signingkey = 748B3546
 
 [svn]
 	authorsfile = /home/arto/.svnauthors
