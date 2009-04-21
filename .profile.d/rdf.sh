@@ -1,0 +1,5 @@
+alias nt2dot='rapper -i ntriples - -o dot "file://`pwd`/"'
+alias nt2xml='rapper -i ntriples - -o rdfxml-abbrev "file://`pwd`/"'
+alias nt2ttl='rapper -i ntriples - -o turtle "file://`pwd`/"'
+alias ttl2nt='rapper -i turtle - -o ntriples "file://`pwd`/"'
+alias xml2nt='rapper -i rdfxml -o ntriples -'
