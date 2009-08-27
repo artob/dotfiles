@@ -1,2 +1,9 @@
+[ui]
+username = Arto Bendiken <arto@bendiken.net>
+editor = joe
+
 [email]
 from = Arto Bendiken <arto@bendiken.net>
+
+[gpg]
+key = 748B3546
