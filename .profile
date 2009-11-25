@@ -1,7 +1,9 @@
 export EMAIL="arto@bendiken.net"
 export EDITOR="joe"
 
-source ~/.bash_aliases
+if [ -f ~/.bash_aliases ]; then
+  source ~/.bash_aliases
+fi
 
 for file in `ls ~/.profile.d/*.sh`; do
   source $file
