@@ -1,0 +1,6 @@
+alias start-rabbitmq='sudo rabbitmq-server -detached'
+alias stop-rabbitmq='sudo rabbitmqctl stop'
+alias amqp-lsx='sudo rabbitmqctl -q list_exchanges'
+alias amqp-lsq='sudo rabbitmqctl -q list_queues'
+alias amqp-lsb='sudo rabbitmqctl -q list_bindings'
+alias amqp-lsc='sudo rabbitmqctl -q list_connections'
