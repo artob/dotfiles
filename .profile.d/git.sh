@@ -1,5 +1,7 @@
 alias git-push-all='git-push-github && git-push-rubyforge'
 alias git-push-github='git push github master'
+alias git-push-gitorius='git push gitorius master'
+alias git-push-heroku='git push heroku master'
 alias git-push-rubyforge='git push rubyforge master'
 alias git-push-unfuddle='git push unfuddle master'
 alias git-reset='git reset --hard'
