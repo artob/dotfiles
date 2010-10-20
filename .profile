@@ -1,3 +1,5 @@
+ulimit -u 512
+
 export EMAIL="arto@bendiken.net"
 export EDITOR="joe"
 
