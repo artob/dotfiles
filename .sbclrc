@@ -1,8 +1,8 @@
 (require :asdf)
 
-(pushnew #p"/opt/local/lib/lisp/" asdf:*central-registry* :test #'equal)
-(pushnew #p"/Users/arto/.asdf/"   asdf:*central-registry* :test #'equal)
+#+darwin (pushnew #p"/Users/arto/.asdf/" asdf:*central-registry* :test #'equal)
+#+linux  (pushnew #p"/home/arto/.asdf/"  asdf:*central-registry* :test #'equal)
 
-(declaim #+sbcl(sb-ext:muffle-conditions style-warning))
-(load "/opt/local/lib/lisp/de/setf/utility/asdf/hierarchical-names.lisp")
-(declaim #+sbcl(sb-ext:unmuffle-conditions style-warning))
+;(declaim #+sbcl(sb-ext:muffle-conditions style-warning))
+;(load "/opt/local/lib/lisp/de/setf/utility/asdf/hierarchical-names.lisp")
+;(declaim #+sbcl(sb-ext:unmuffle-conditions style-warning))
