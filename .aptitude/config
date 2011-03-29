@@ -1,0 +1,4 @@
+Apt "";
+Apt::Install-Recommends "false";
+Aptitude "";
+Aptitude::Keep-Recommends "false";
