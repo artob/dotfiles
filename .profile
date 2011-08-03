@@ -3,6 +3,7 @@
 
 export EMAIL="arto@bendiken.net"
 export EDITOR="joe"
+export LC_CTYPE="en_US.UTF-8"
 
 if [ -d ~/.profile.d ]; then
   for file in `ls ~/.profile.d/*.sh`; do
