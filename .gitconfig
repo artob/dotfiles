@@ -11,3 +11,8 @@
 	ci = commit
 	st = status
 	stat = diff --name-status -r
+
+[color]
+	diff = true
+	grep = true
+	status = true
