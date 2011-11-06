@@ -1,4 +1,5 @@
 alias git-push-all='git-push-github && git-push-rubyforge'
+alias git-push-bitbucket='git push bitbucket master'
 alias git-push-github='git push github master'
 alias git-push-gitorius='git push gitorius master'
 alias git-push-heroku='git push heroku master'
