@@ -16,3 +16,6 @@
 	diff = true
 	grep = true
 	status = true
+
+[push]
+	default = upstream
