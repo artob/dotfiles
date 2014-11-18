@@ -1,7 +1,9 @@
 (require :asdf)
 
-#+darwin (pushnew #p"/Users/arto/.asdf/" asdf:*central-registry* :test #'equal)
-#+linux  (pushnew #p"/home/arto/.asdf/"  asdf:*central-registry* :test #'equal)
+#+darwin  (pushnew #p"/Users/arto/.asdf/" asdf:*central-registry* :test #'equal)
+#+linux   (pushnew #p"/home/arto/.asdf/"  asdf:*central-registry* :test #'equal)
+#+freebsd (pushnew #p"/home/arto/.asdf/"  asdf:*central-registry* :test #'equal)
+#+openbsd (pushnew #p"/home/arto/.asdf/"  asdf:*central-registry* :test #'equal)
 
 ;(declaim #+sbcl(sb-ext:muffle-conditions style-warning))
 ;(load "/opt/local/lib/lisp/de/setf/utility/asdf/hierarchical-names.lisp")
