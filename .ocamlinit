@@ -1,3 +1,4 @@
+(* Added by OPAM. *)
 let () =
   try Topdirs.dir_directory (Sys.getenv "OCAML_TOPLEVEL_PATH")
   with Not_found -> ()
@@ -8,5 +9,7 @@ let () =
 #camlp4o;;
 #require "core.top";;
 #require "core.syntax";;
+#require "ctypes.foreign";;
+#require "ctypes.top";;
 
 open Core.Std;;
