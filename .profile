@@ -5,14 +5,16 @@ export EMAIL="arto@bendiken.net"
 export EDITOR="joe"
 export LC_CTYPE="en_US.UTF-8"
 
-if [ -d ~/.profile.d ]; then
-  for file in `ls ~/.profile.d/*.sh`; do
+# Load ~/.profile.d/*.sh in lexical order:
+if [ -d "$HOME/.profile.d" ]; then
+  for file in `ls -1 $HOME/.profile.d/*.sh 2>/dev/null`; do
     source $file
   done
 fi
 
-if [ -d ~/.private ]; then
-  for file in `ls ~/.private/*.sh`; do
+# Load ~/.private.d/*.sh in lexical order:
+if [ -d "$HOME/.private.d" ]; then
+  for file in `ls -1 $HOME/.private.d/*.sh 2>/dev/null`; do
     source $file
   done
 fi
