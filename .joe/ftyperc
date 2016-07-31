@@ -7,12 +7,14 @@
 *
  Text file.
 *.txt
+-french
 
  Not a text file
 [not_text]
  File name with '.'?  It's probably not a text file.
 *.*
 -wordwrap
+-french
 
  Diff
 [diff]
@@ -580,6 +582,7 @@
 *.md
 -syntax md
 -wordwrap
+-french
 
  YAML
 [yaml]
