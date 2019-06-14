@@ -53,7 +53,8 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
   . /etc/bash_completion
 fi
-if [ -f /opt/local/etc/bash_completion ]; then
-  # Mac OS X + MacPorts: `sudo port install bash-completion`
-  . /opt/local/etc/bash_completion
+
+# macOS with Homebrew: `brew install bash-completion@2`
+if [ -r /opt/homebrew/etc/profile.d/bash_completion.sh ]; then
+  . /opt/homebrew/etc/profile.d/bash_completion.sh
 fi
