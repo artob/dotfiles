@@ -1,2 +1,3 @@
 #!/bin/sh
-export PATH="/opt/flutter/bin:$PATH"
+export FLUTTER_ROOT=/opt/flutter
+export PATH="$FLUTTER_ROOT/bin:$PATH"
