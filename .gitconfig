@@ -9,6 +9,7 @@
 [alias]
 	co = checkout
 	ci = commit
+	edit = commit --amend --reset-author
 	st = status
 	stat = diff --name-status -r
 
