@@ -10,8 +10,10 @@
 	co = checkout
 	ci = commit
 	edit = commit --amend --reset-author
+	ls = log --pretty=oneline
 	st = status
 	stat = diff --name-status -r
+	undo = reset --soft HEAD^
 
 [color]
 	diff = true
