@@ -7,14 +7,12 @@
 *
  Text file.
 *.txt
--french
 
  Not a text file
 [not_text]
  File name with '.'?  It's probably not a text file.
 *.*
 -wordwrap
--french
 
  Diff
 [diff]
@@ -80,6 +78,7 @@
 *.asm
 *.s
 *.S
+-highlighter_context
 -wordwrap
 -syntax asm
 
@@ -87,18 +86,22 @@
 [mason]
 *.mas
 -autoindent
+-title
 -syntax mason
 -smarthome
 -smartbacks
+-highlighter_context
 
  SML
 [sml]
 *.sml
 -autoindent
+-title
 -syntax sml
 -smarthome
 -smartbacks
 -istep 2
+-highlighter_context
 
  OCaml
 [ocaml]
@@ -106,10 +109,12 @@
  OCaml language interface
 *.mli
 -autoindent
+-title
 -syntax ocaml
 -smarthome
 -smartbacks
 -istep 2
+-highlighter_context
 
  Ruby
 [ruby]
@@ -122,9 +127,11 @@
 *Guardfile
 *.rabl
 -autoindent
+-title
 -pound_comment
 -syntax ruby
 -text_delimiters do=end
+-highlighter_context
 
  Perl
 [perl]
@@ -134,16 +141,19 @@
 *.pm
 *.t
 -autoindent
+-title
 -syntax perl
 -smarthome
 -smartbacks
 -pound_comment
 -single_quoted
+-highlighter_context
 
  SQL
 [sql]
 *.sql
 -autoindent
+-title
 -syntax sql
 -smarthome
 -smartbacks
@@ -154,21 +164,25 @@
 -cpp_comment
 -text_delimiters BEGIN|Begin|begin=END|End|end
 -cpara >#!;*/%
+-highlighter_context
 
  AWK
 [awk]
 *.awk
 -autoindent
+-title
 -syntax awk
 -smarthome
 -smartbacks
 -purify
 -pound_comment
+-highlighter_context
 
  YACC
 [yacc]
 *.y
 -autoindent
+-title
 -syntax c
 -highlighter_context
 -smarthome
@@ -185,6 +199,7 @@
 *.l
 *.lex
 -autoindent
+-title
 -syntax c
 -highlighter_context
 -smarthome
@@ -202,18 +217,21 @@
 *.ads
 -syntax ada
 -autoindent
+-title
 -istep 2
 -smarthome
 -smartbacks
 -purify
 -vhdl_comment
 -text_delimiters declare|Declare|DECLARE|exception|Exception|EXCEPTION|if|If|IF|loop|Loop|LOOP|case|Case|CASE|package|Package|PACKAGE|procedure|Procedure|PROCEDURE|record|Record|RECORD|function|Function|FUNCTION=end|End|END
+-highlighter_context
 
  COBOL
 [cobol]
 *.cbl
 *.cob
 -syntax cobol
+-highlighter_context
 
  REXX
 [rexx]
@@ -223,17 +241,21 @@
 +#![ 	]*[^\n]*rexx[0-9.]*\>
 -syntax rexx
 -autoindent
+-title
+-highlighter_context
 
  SED script
 [sed]
 *.sed
 -syntax sed
+-highlighter_context
 
  Postscript
 [postscript]
 *.ps
 *.eps
 -syntax ps
+-highlighter_context
 
  C language
 [c]
@@ -249,6 +271,7 @@
 *.hh
 *.mm
 -autoindent
+-title
 -syntax c
 -highlighter_context
 -smarthome
@@ -275,6 +298,7 @@
 -cpp_comment
 -text_delimiters `ifdef|`ifndef=`else=`endif:begin=end:case|casex|casez=endcase:function=endfunction:module=endmodule:task=endtask:attribute=endattribute:primitive=endprimitive:table=endtable
 -cpara >#!;*/%
+-highlighter_context
 
  VHDL
 [vhdl]
@@ -288,6 +312,7 @@
 -vhdl_comment
 -text_delimiters entity|ENTITY|if|IF|component|COMPONENT|loop|LOOP|configuration|CONFIGURATION|units|UNITS|record|RECORD|case|CASE|function|FUNCTION|package|PACKAGE|architecture|ARCHITECTURE|block|BLOCK|process|PROCESS|generate|GENERATE=end|END
 -cpara >#!;*-/%
+-highlighter_context
 
  XML
 [xml]
@@ -302,6 +327,7 @@
 *build.xml
 -autoindent
 -syntax xml
+-highlighter_context
 
  Apple plists
 [plist]
@@ -332,6 +358,7 @@
 [java]
 *.java
 -autoindent
+-title
 -syntax java
 -smarthome
 -smartbacks
@@ -339,6 +366,7 @@
 -cpp_comment
 -purify
 -cpara >#!;*/%
+-highlighter_context
 
  Javascript
 [javascript]
@@ -346,6 +374,7 @@
 *
 +#![ 	]*[^\n]*nodejs[0-9.]*\>
 -autoindent
+-title
 -syntax js
 -smarthome
 -smartbacks
@@ -353,6 +382,7 @@
 -c_comment
 -cpp_comment
 -cpara >#!;*/%
+-highlighter_context
 
  JSON
 [json]
@@ -361,11 +391,13 @@
 -syntax json
 -smarthome
 -smartbacks
+-highlighter_context
 
  Typescript
 [typescript]
 *.ts
 -autoindent
+-title
 -syntax typescript
 -smarthome
 -smartbacks
@@ -373,15 +405,18 @@
 -c_comment
 -cpp_comment
 -cpara >#!;*/%
+-highlighter_context
 
  Hypertext preprocessor file
 [php]
 *.php
 -autoindent
+-title
 -syntax php
 -smarthome
 -smartbacks
 -purify
+-highlighter_context
 
  Python
 [python]
@@ -389,6 +424,7 @@
 +#![ 	]*[^\n]*python[0-9.]*\>
 *.py
 -autoindent
+-title
 -syntax python
 -highlighter_context
 -smarthome
@@ -408,8 +444,10 @@
 *.tcsh
 *.tcshrc
 -autoindent
+-title
 -syntax csh
 -pound_comment
+-highlighter_context
 
  Shell
 [sh]
@@ -423,6 +461,7 @@
 *.bash_login
 *.bash_logout
 -autoindent
+-title
 -syntax sh
 -highlighter_context
 -pound_comment
@@ -434,8 +473,10 @@
 *.lsp
 *.el
 -autoindent
+-title
 -syntax lisp
 -semi_comment
+-highlighter_context
 
  Korn shell
 [ksh]
@@ -443,30 +484,36 @@
 +#![ 	]*[^\n 	]*/ksh\>
 *.ksh
 -autoindent
+-title
 -syntax sh
 -highlighter_context
 -pound_comment
 -text_delimiters do=done:if=elif=else=fi:case=esac
+-highlighter_context
 
  PASCAL
 [pascal]
 *.p
 *.pas
 -autoindent
+-title
 -syntax pascal
 -smarthome
 -smartbacks
 -purify
 -text_delimiters begin|BEGIN|record|RECORD|case|CASE=end|END:repeat|REPEAT=until|UNTIL
+-highlighter_context
 
- Fortral
+ Fortran
 [fortran]
 *.f
 *.f90
 *.for
 *.FOR
 -autoindent
+-title
 -syntax fortran
+-highlighter_context
 
  Cadence SKILL
 [skill]
@@ -474,11 +521,13 @@
 -semi_comment
 -syntax skill
 -autoindent
+-title
 -istep 3
 -indentc 32
 -smartbacks
 -smarthome
 -indentfirst
+-highlighter_context
 
  Lua
 [lua]
@@ -486,18 +535,23 @@
 *
 +#![ 	]*[^\n]*lua[0-9.]*\>
 -autoindent
+-title
 -syntax lua
+-highlighter_context
 
  TCL
 [tcl]
 *.tcl
 -autoindent
+-title
 -syntax tcl
+-highlighter_context
 
  Go language
 [go]
 *.go
 -autoindent
+-title
 -syntax go
 -smarthome
 -smartbacks
@@ -506,38 +560,51 @@
 -c_comment
 -text_delimiters #if|#ifdef|#ifndef=#elif=#else=#endif
 -cpara >#!;*/%
+-highlighter_context
 
  CSharp
 [c#]
 *.cs
 -autoindent
+-title
 -syntax csharp
 -smarthome
 -smartbacks
 -purify
 -cpara >#!;*/%
 -text_delimiters #region=#endregion:#if=#elif=#else=#endif
+-highlighter_context
 
  Joe Syntax File
 [jsf]
 *.jsf
 *.jsf.in
 -autoindent
+-title
 -syntax jsf
 -smarthome
+-highlighter_context
+
+ Joe Colorscheme file
+[jcf]
+*.jcf
+-syntax jcf
 
  M4 / Autoconfig file
 [m4]
 *.ac
 *.m4
 -autoindent
+-title
 -syntax m4
+-highlighter_context
 
  Matlab file (clashes with objective-C)
 [matlab]
 *.m
 -wordwrap
 -syntax matlab
+-highlighter_context
 
  UNIX configuration file
 [conf]
@@ -554,6 +621,7 @@
 -autoindent
 -syntax conf
 -pound_comment
+-highlighter_context
 
  Windows batch files
 [bat]
@@ -561,6 +629,7 @@
 *.cmd
 -autoindent
 -syntax batch
+-highlighter_context
 
  JOERC file
 [joerc]
@@ -576,13 +645,13 @@
 *rjoerc.in
 *jpicorc.in
 -syntax joerc
+-highlighter_context
 
  Markdown
 [markdown]
 *.md
 -syntax md
 -wordwrap
--french
 
  YAML
 [yaml]
@@ -593,6 +662,7 @@
 -smartbacks
 -pound_comment
 -syntax yaml
+-highlighter_context
 
  Debian apt
 [debian]
@@ -601,6 +671,12 @@
 -pound_comment
 -syntax debian
 
+ debcontrol
+[control]
+*control
+*copyright
+-syntax debcontrol
+
  Java's .properties
 [java_properties]
 *.properties
@@ -608,6 +684,7 @@
 -encoding iso-8859-1
 -pound_comment
 -syntax properties
+-highlighter_context
 
  INI Files
 [ini]
@@ -619,16 +696,19 @@
 -syntax ini
 -pound_comment
 -semi_comment
+-highlighter_context
 
  plain ERB
 [erb]
 *.erb
 -syntax erb
+-highlighter_context
 
  ERB within HTML
 [erb_html]
 *.html.erb
 -syntax htmlerb
+-highlighter_context
 
  Haml
 [haml]
@@ -639,6 +719,7 @@
 -autoindent
 -smarthome
 -smartbacks
+-highlighter_context
 
  Erlang
 [erlang]
@@ -650,12 +731,16 @@
 *.erlang
 -syntax erlang
 -autoindent
+-title
+-highlighter_context
 
  Sieve (ManageSieve)
 [sieve]
 *.sieve
 -syntax sieve
 -autoindent
+-title
+-highlighter_context
 
  Puppet
 [puppet]
@@ -663,6 +748,8 @@
 -syntax puppet
 -pound_comment
 -autoindent
+-title
+-highlighter_context
 
  ip(6)tables
 [iptables]
@@ -675,7 +762,12 @@
  PowerShell
 [powershell]
 *.ps1
+*.psm1
 -syntax powershell
+-autoindent
+-smarthome
+-smartbacks
+-highlighter_context
 
  Git COMMIT_EDITMSG
 [git-commit]
@@ -687,20 +779,28 @@
 *.ex
 *.exs
 -autoindent
+-smarthome
+-smartbacks
+-title
 -syntax elixir
 -pound_comment
--text_delimiters do=end
+-text_delimiters do=else=end
+-indentc 32
+-istep 2
+-highlighter_context
 
  R
 [r]
 *.r
 -autoindent
+-title
 -syntax r
 -pound_comment
 -smarthome
 -smartbacks
 -purify
 -single_quoted
+-highlighter_context
 
  Groovy
 [groovy]
@@ -709,6 +809,7 @@
 *.gy
 *.gsh
 -autoindent
+-title
 -syntax groovy
 -c_comment
 -cpp_comment
@@ -716,6 +817,7 @@
 -smartbacks
 -purify
 -single_quoted
+-highlighter_context
 
  Clojure
 [clojure]
@@ -724,16 +826,19 @@
 *.cljc
 *.edn
 -autoindent
+-title
 -syntax clojure
 -semi_comment
 -smarthome
 -smartbacks
 -purify
+-highlighter_context
 
  Rust
 [rust]
 *.rs
 -autoindent
+-title
 -syntax rust
 -c_comment
 -cpp_comment
@@ -741,22 +846,26 @@
 -smartbacks
 -purify
 -single_quoted
+-highlighter_context
 
  Coffeescript
 [coffee]
 *.coffee
 -autoindent
+-title
 -syntax coffee
 -pound_comment
 -smarthome
 -smartbacks
 -purify
 -single_quoted
+-highlighter_context
 
  Scala
 [scala]
 *.scala
 -autoindent
+-title
 -syntax scala
 -c_comment
 -cpp_comment
@@ -764,11 +873,13 @@
 -smartbacks
 -purify
 -single_quoted
+-highlighter_context
 
  Swift
 [swift]
 *.swift
 -autoindent
+-title
 -syntax swift
 -c_comment
 -cpp_comment
@@ -776,11 +887,13 @@
 -smartbacks
 -purify
 -single_quoted
+-highlighter_context
 
  D
 [d]
 *.d
 -autoindent
+-title
 -syntax d
 -c_comment
 -cpp_comment
@@ -788,3 +901,29 @@
 -smartbacks
 -purify
 -single_quoted
+-highlighter_context
+
+ Docker
+[dockerfile]
+*Dockerfile
+-autoindent
+-title
+-syntax dockerfile
+-pound_comment
+-highlighter_context
+
+ RPM Spec
+[spec]
+*.spec
+-autoindent
+-syntax spec
+
+ Haskell
+[haskell]
+*.hs
+-autoindent
+-smarthome
+-smartbacks
+-syntax haskell
+-vhdl_comment
+-highlighter_context
