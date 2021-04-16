@@ -20,6 +20,9 @@
 	grep = true
 	status = true
 
+[init]
+	defaultBranch = master
+
 [push]
 	default = upstream
 
