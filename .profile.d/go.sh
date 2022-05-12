@@ -5,3 +5,5 @@ case $OSTYPE in
     export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
     ;;
 esac
+
+export GOPRIVATE="github.com/aurora-is-near,github.com/conreality"
