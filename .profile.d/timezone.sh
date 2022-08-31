@@ -1,1 +1,1 @@
-export TZ='Europe/Kiev'
+export TZ='Asia/Dubai'
