@@ -6,4 +6,6 @@ case $OSTYPE in
     ;;
 esac
 
-export GOPRIVATE="github.com/aurora-is-near,github.com/conreality"
+export GOPRIVATE="github.com/Conreality"
+export GOPRIVATE="github.com/ConrealityCorp,$GOPRIVATE"
+export GOPRIVATE="github.com/HaltiaAI,$GOPRIVATE"
