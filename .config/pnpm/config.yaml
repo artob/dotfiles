@@ -1,0 +1,4 @@
+# See: https://pnpm.io/cli/config
+---
+# See: https://pnpm.io/supply-chain-security
+minimumReleaseAge: 4320  # 3 days
