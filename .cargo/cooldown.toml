@@ -1,0 +1,8 @@
+# See: https://github.com/dertin/cargo-cooldown#basic-config
+
+[cooldown]
+incompatible-publish-age = "deny"
+lockfile-baseline = "floor"
+
+[registry]
+global-min-publish-age = "3 days"
