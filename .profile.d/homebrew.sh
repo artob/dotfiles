@@ -1,3 +1,6 @@
+# Disable untimely/unexpected updates due to supply chain concerns
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 case $OSTYPE in
   darwin*)
     eval "$(/opt/homebrew/bin/brew shellenv)"
