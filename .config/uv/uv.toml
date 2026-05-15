@@ -1,0 +1,4 @@
+# See: https://docs.astral.sh/uv/concepts/configuration-files/
+
+# See: https://docs.astral.sh/uv/reference/settings/#exclude-newer
+exclude-newer = "P3D"
